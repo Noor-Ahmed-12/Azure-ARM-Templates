@@ -179,7 +179,7 @@
                 "autoUpgradeMinorVersion": true,
                 "settings": {
                     "fileUris": [
-                        "https://raw.githubusercontent.com/Noor-Ahmed-12/Azure-ARM-Templates/master/nginx-script.sh"
+                        "https://raw.githubusercontent.com/Noor-Ahmed-12/Azure-ARM-Templates/master/VM%20templates/nginx-script.sh"
                     ],
                     "commandToExecute": "bash nginx-script.sh"
                 }
