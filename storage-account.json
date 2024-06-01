@@ -12,6 +12,21 @@
                 "Standard",
                 "Premium"
             ]
+        },
+        "storageKind": {
+            "type": "string",
+            "metadata": {
+                "description": "description"
+            },
+            "defaultValue": "StorageV2",
+            "allowedValues": [
+                "Storage",
+                "StorageV2",
+                "BlobStorage",
+                "FileStorage",
+                "BlockBlobStorage"
+            ]
+            
         }
     },
     "functions": [],
@@ -27,7 +42,7 @@
                 "displayName": "[variables('storageName')]"
             },
             "location": "[resourceGroup().location]",
-            "kind": "StorageV2",
+            "kind": "[parameters('storageKind')]",
             "sku": {
                 "name": "Premium_LRS",
                 "tier": "[parameters('azureStorageType')]"
